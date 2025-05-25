@@ -1,0 +1,20 @@
+ion-col {
+  background-color: #90c6dc00;
+  color: #ffffff;
+  text-align: center;
+}
+
+ion-grid{
+    border-radius: 20px;
+    background-color: #167fa95f;
+    text-align: center;
+    margin: 10px;
+}
+
+/* Tab1.css */
+ion-button {
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  border-radius: 12px;
+}
