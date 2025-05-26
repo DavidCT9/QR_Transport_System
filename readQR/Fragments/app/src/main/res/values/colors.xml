@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Basic Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Background and Primary Colors -->
+    <color name="background">#F5F5F5</color>
+    <color name="primary">#6200EE</color>
+
+    <!-- Text Colors -->
+    <color name="primaryText">#212121</color>
+    <color name="secondaryText">#757575</color>
+
+    <!-- Additional Palette Colors -->
+    <color name="graphicDesign1">#021373</color> <!-- Deep Blue -->
+    <color name="graphicDesign2">#08428C</color> <!-- Medium Blue -->
+    <color name="graphicDesign3">#F23005</color> <!-- Bright Red -->
+    <color name="graphicDesign4">#A60303</color> <!-- Dark Red -->
+    <color name="graphicDesign5">#BFBFBF</color> <!-- Light Gray -->
+</resources>

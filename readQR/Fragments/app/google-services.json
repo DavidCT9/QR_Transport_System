@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "786277527597",
+    "firebase_url": "https://basiclogin-99ae8-default-rtdb.firebaseio.com",
+    "project_id": "basiclogin-99ae8",
+    "storage_bucket": "basiclogin-99ae8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:786277527597:android:b8411be57e714c746408a4",
+        "android_client_info": {
+          "package_name": "com.example.fragments"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtO7JFpaLnVgELnl36eGu2_fzHSwRWJW4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:786277527597:android:9165dfc6e471bb176408a4",
+        "android_client_info": {
+          "package_name": "com.example.practice2_3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtO7JFpaLnVgELnl36eGu2_fzHSwRWJW4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
