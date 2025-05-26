@@ -20,6 +20,9 @@ struct RegisterView: View {
     @State private var semestre = ""
     @State private var message = ""
 
+    @State private var mostrarAlerta = false
+    @State private var textoAlerta = ""
+
     var body: some View {
         ScrollView {
             VStack(spacing: 20) {
@@ -50,7 +53,8 @@ struct RegisterView: View {
                     if camposValidos() {
                         Auth.auth().createUser(withEmail: email, password: password) { result, error in
                             if let error = error {
-                                message = "Error: \(error.localizedDescription)"
+                                textoAlerta = "Firebase error: \(error.localizedDescription)"
+                                mostrarAlerta = true
                             } else if let uid = result?.user.uid {
                                 let ref = Database.database().reference()
                                 let datos = [
@@ -63,6 +67,9 @@ struct RegisterView: View {
                                 message = "Account created successfully!"
                             }
                         }
+                    } else {
+                        textoAlerta = "You must complete all fields before continuing."
+                        mostrarAlerta = true
                     }
                 }
                 .padding()
@@ -74,12 +81,17 @@ struct RegisterView: View {
                     .foregroundColor(.gray)
                     .font(.footnote)
 
-                Button("¿You alredy have an account? Login") {
+                Button("¿You already have an account? Login") {
                     dismiss()
                 }
                 .padding(.top)
             }
             .padding(.top, 30)
+        }
+        .alert(isPresented: $mostrarAlerta) {
+            Alert(title: Text("Incomplete or Invalid"),
+                  message: Text(textoAlerta),
+                  dismissButton: .default(Text("OK")))
         }
     }
 
@@ -92,4 +104,3 @@ struct RegisterView: View {
                !semestre.isEmpty
     }
 }
-

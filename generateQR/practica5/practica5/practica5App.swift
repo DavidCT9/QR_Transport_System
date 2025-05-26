@@ -16,7 +16,7 @@ struct practica5App: App {
 
     var body: some Scene {
         WindowGroup {
-            MainView()
+            SplashScreenView()
         }
     }
 }
